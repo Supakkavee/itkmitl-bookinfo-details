@@ -13,5 +13,5 @@ ingress:
   path: "/student14/ratings(/|$)(.*)"
   serviceType: ClusterIP
 extraEnv:
-  SERVICE_VERSION: v2
+  SERVICE_VERSION: v1
   ENABLE_EXTERNAL_BOOK_SERVICE: "true"
