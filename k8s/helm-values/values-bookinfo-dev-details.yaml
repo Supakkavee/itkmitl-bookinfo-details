@@ -1,6 +1,6 @@
-ratings:
+details:
   namespace: student14-bookinfo-dev
-  image: ghcr.io/supakkavee/bookinfo-ratings
+  image: ghcr.io/supakkavee/bookinfo-details
   tag: dev
   replicas: 1
   imagePullSecrets: registry-bookinfo
@@ -10,7 +10,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$2
   host: itkmitl.bookinfo.dev.opsta.net
-  path: "/student14/ratings(/|$)(.*)"
+  path: "/student14/details(/|$)(.*)"
   serviceType: ClusterIP
 extraEnv:
   SERVICE_VERSION: v1
